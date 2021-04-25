@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Nueva tarjeta</title>
+</head>
+<body>
+    <aside class="roboto">20% de descuento en todos los productos!</aside>
+    <header>
+        <div class ="header roboto">
+            <img src="/img/tiendita.png" alt="tienda pixeladisima">
+            <h1>Nombre Tienda</h1>
+        </div>
+        <nav class="roboto">
+            <a href="index.html" class ="">Inicio</a>    
+            <a href="contacto.html" class ="">Contacto</a>    
+            <a href="register.html" class ="">Registrarme</a>
+            <a href="login.html" class ="">Ingresar</a>
+        </nav>
+    </header>
+    <main>
+        <section class="form-group inter">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <form action="index.html">
+                <div class="form-group-col">
+                    <label for="nombre">* Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+
+                    <textarea name="descripcion" placeholder="Descripcion"></textarea>
+                </div>
+                <div class="form-group-col">
+                    <label for="especie">* Especie</label>
+                    <select name="especie" id="especie">
+                        <option disabled hidden selected>Especie</option>
+                        <option value="humano">Humano</option>
+                        <option value="kriptoniano">Kriptoniano</option>
+                    </select>
+                    <label class="block-title">Agregar Foto</label>
+                    <div>
+                        <label for="imagen">Seleccionar archivo</label>
+                        <input type="file" id="imagen" name="imagen">
+                        <span class="text-file">No se eligio archivo</span>
+                    </div>
+                    
+
+                    <label class="block-title" id="poderes">Poderes</label>
+                    <div>
+                        <input type="checkbox" id="volar">
+                        <label for="volar">Volar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="inteligencia">
+                        <label for="inteligencia">Superinteligencia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="laser">
+                        <label for="laser">Vista de rayo laser</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dinero">
+                        <label for="dinero">Billetera gorda</label>
+                    </div>
+                    <br>
+                    <hr>
+                    <label class="block-title">Tipo de personaje</label>
+                    <div>
+                        <input type="radio" id="heroe" name="tipo">
+                        <label for="heroe">Héroe / Heroína</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="villano" name="tipo">
+                        <label for="villano">Villano / Villana</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" name="datos" class="miboton" value="Añadir">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="roboto">
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>

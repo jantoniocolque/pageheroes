@@ -75,7 +75,7 @@ section h2{
     font-weight: 700;
 }
 
-section input{
+section.form-control input{
     width: 99%;
     margin: 5px;
     padding: 8px;
@@ -110,17 +110,17 @@ textarea{
     margin-bottom: 15px;
 }
 .reset{
-    width: 47%;
+    width: 47% !important;
     font-size: 17px;
-    margin-left: 5px;
+    margin-left: 5px !important;
     color:white;
     background-color: #888;
 }
 .size-min{
-    margin-right: 0;
+    margin-right: 0 !important;
     font-size: 17px;
-    margin-left: 10px;
-    width: 47%;
+    margin-left: 10px !important;
+    width: 47% !important;
 }
 section span{
     color: var(--main-color);
@@ -229,6 +229,9 @@ p {
     bottom: 100px;
     z-index:2001;
 }
+.fa-plus-circle:hover{
+    color:#001D2D;
+}
 
 
 /* Características comúnes de los header */
@@ -321,6 +324,99 @@ section.info-card-heroe p{
     background-color: #2C0187;
 }
 
+.form-group{
+    background-color:#00669F;
+    width: 60%;
+    color:white;
+    height:132vh;
+    margin: 10% auto;
+    padding:1px 0px;
+    font-size:16px;
+    border-radius: 20px;
+}
+.form-group p, .form-group label{
+    font-family: 'Karla';
+    color: rgba(255,255,255,.8);
+}
+.form-group h2{
+    font-size: 2.1rem;
+    text-align: center;
+}
+.form-group form{
+    position:relative;
+}
+.form-group .form-group-col{
+    width: 35%;
+    position:absolute;
+}
+.form-group .form-group-col:nth-child(1){
+    left:10%;
+}
+.form-group .form-group-col:nth-child(even){
+    right:10%;
+}
+.form-group select, .form-group .block-title, .form-group input[type="text"], .form-group textarea, .form-group input[type="date"]{
+    display:block;
+    width: 100%;
+    margin:14px 0px;
+    border-radius: 5px;
+    border:none;
+    padding:10px 0px;
+}
+.form-group #poderes{
+    margin-top:26px;
+}
+.form-group label.block-title{
+    margin: 0px 0px;
+}
+.form-group textarea{
+    margin-top:24px;
+    height: 225px;
+    padding:10px;
+}
+.form-group input[type="file"]{
+    display:none;
+}
+.form-group input[type="radio"],.form-group input[type="checkbox"]{
+    margin: 6px 0px;
+}
+.form-group label[for="imagen"]{
+    font-size: 13px;
+    color: #000;
+    background-color: #CECECE;
+    cursor: pointer;
+    padding: 10px !important;
+    text-align: center;
+    border-radius: 5px;
+}
+.form-group .text-file{
+    font-size:12px;
+    color:black;
+    padding-left: 17px;
+    font-family: 'Karla';
+}
+.form-group textarea::placeholder{
+    color:rgba(0,0,0,.5);
+    font-family: 'Karla';
+    font-size: 15px;
+}
+.form-group .miboton{
+    position: absolute;
+    bottom:-105vh;
+    right:30%;
+    background-color: #1cd1b0;
+    color:black;
+    font-family: 'Inter';
+    border-radius:10px;
+    border:none;
+    padding:3% 14%;
+    font-size:25px;
+    cursor:pointer;
+}
+.form-group .miboton:hover{
+    background-color: #001D2D;
+    color:white;
+}
 footer{
     color:white;
     padding: 16px;

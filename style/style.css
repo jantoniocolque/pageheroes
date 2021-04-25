@@ -328,7 +328,7 @@ section.info-card-heroe p{
     background-color:#00669F;
     width: 60%;
     color:white;
-    height:132vh;
+    height:90vh;
     margin: 10% auto;
     padding:1px 0px;
     font-size:16px;
@@ -402,7 +402,7 @@ section.info-card-heroe p{
 }
 .form-group .miboton{
     position: absolute;
-    bottom:-105vh;
+    bottom:-71vh;
     right:30%;
     background-color: #1cd1b0;
     color:black;
